@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body { 
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    background: var(--black-color);
+    color: #fff;
+    margin: 0;
+}
+
+main {
+    background-color: var(--black-color);
+    color: var(--black-color);
+}
+
+.hero-panel {
+    position: relative; 
+    overflow: hidden;
+    background-color: var(--black-color);
+    height: 55vh;
+}
+
+.hero-panel img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transform: translate(0%, -20%);
+    opacity: 0.5;
+}
+
+.hero-panel a.fondo_oscuro {
+    position: absolute;
+    background-color: rgba(14, 14, 45, 0.6);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.hero-content {
+    font-size: xx-large;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2.5rem 4rem;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+    max-width: 90%;
+    width: 1400px;
+    z-index: 2;
+}
+
+.ri-auction-fill {
+    font-size: 2rem;
+    color: #FFD700;
+}
+    /*Contador Numerico*/
+    .prueba {
+        padding: 2em 0; /* Espaciado alrededor de la sección */
+        text-align: center;
+        background-color: hsl(220, 20%, 18%); /* Fondo claro para separarla del HeroPanel */
+    }
+
+    .wrapper{
+        
+        position: relative; /* Cambiado de absolute a relative */
+        width: 90%; /* Mejor ajuste dinámico */
+        margin: 0 auto; /* Centrado horizontal */
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap; /* Para que los elementos se acomoden si hay menos espacio */
+        gap: 20px; /* Espaciado entre contenedores */
+    }
+
+    .contenedor{
+        width: 25%; /* Ajusta según tus necesidades */
+        max-width: 200px; /* Para evitar que se estiren demasiado */
+        height: auto;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.5em;
+        background-color: hsl(220, 24%, 15%);
+        border-bottom: 10px solid #FFD700;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade un poco de sombra */
+    }
+
+    .wrapper .contenedor i {
+        color: #FFD700;
+        font-size: 2.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    .wrapper .contenedor .num {
+        color: #fff;
+        font-weight: 600;
+        font-size: 2em;
+    }
+    
+    .wrapper .contenedor .text {
+        color: #fff;
+        font-size: 1em;
+        text-align: center;
+        margin-top: 0.5em;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+
+    .intro-servicios{
+        padding: 4em 0; /* Espaciado alrededor de la sección */
+        text-align: center;
+        background-color: hsl(220, 20%, 18%); /* Fondo claro para separarla del HeroPanel */
+        color: #fff;
+    }
+
+.carrusel{
+    background-color: hsl(220, 20%, 18%); /* Fondo claro para separarla del HeroPanel */
+}
+
+.card-list .card-item .card-link{
+    width: 400px;
+    display: block;
+    background-color: var(--black-color);
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(217, 217, 217, 0.1);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:hover{
+    border-color: #b6b6b6;
+}
+
+.card-list .card-item{
+    list-style: none;
+}
+
+.card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .badge{
+    color: rgb(40, 40, 95);
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    margin: 16px 0 18px;
+    background: #fff;
+    font-weight: 600;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .card-title{
+    font-size: 1.19rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.card-list .card-link .card-button{
+    height: 55px;
+    width: 105px;
+    border-radius: 15%;
+    margin: 30px 0 5px;
+    border: 3px solid #FFD700;
+    color: #FFD700;
+    background: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-left: 7.5rem;
+    transition: 0.4s ease;
+
+}
+
+.card-list .card-link:hover .card-button{
+    color: black;
+    background: #FFD700;
+}
+
+.card-list {
+    display: flex; /* Cambia la disposición de los elementos a flexbox */
+    flex-wrap: wrap; /* Permite que las cards se ajusten en varias filas si es necesario */
+    gap: 20px; /* Espaciado entre las cards */
+    justify-content: center; /* Centra las cards horizontalmente */
+    padding: 20px; /* Espaciado interno del contenedor */
+    list-style: none; /* Elimina el estilo de lista */
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina relleno por defecto */
+}
+
+.card-item {
+    flex: 1 1 calc(25% - 20px); /* Ajusta las cards para ocupar el 25% del contenedor menos el espaciado */
+    max-width: 400px; /* Ancho máximo para mantener las proporciones */
+}
+
+/*Section porque elegirnos*/
+
+.porque-elegirnos {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: auto;
+    background-color: hsl(0, 0%, 100%); /* Fondo claro */
+    color: #fff;
+    flex-wrap: wrap; /* Permitir que las columnas se envuelvan en pantallas pequeñas */
+  }
+  
+  /* Columna izquierda */
+  .left-column {
+    flex: 1;
+    padding: 1rem;
+    background-color: #ffffff;
+    color: #1a1a2e;
+    border-radius: 8px;
+    margin-bottom: 1rem; /* Separación entre bloques cuando se apilen */
+  }
+  
+  /* Columna derecha */
+  .right-column {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas grandes */
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  /* Bloques de la columna derecha */
+  .block {
+    background-color: var(--black-color);
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .block h3 {
+    margin-bottom: 0.5rem;
+    color: #ffc107;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 4px;
+    color: #1a1a2e;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+
+    /* Responsivo para pantallas medianas */
+@media screen and (max-width: 1024px) {
+
+    .hero-panel {
+        height: 45vh; /* Reduce altura en pantallas medianas */
+    }
+
+    .hero-content {
+        font-size: large; /* Reduce tamaño de fuente */
+        padding: 2rem;
+        max-width: 80%;
+    }
+
+    .hero-panel img{
+        height: 55vh;
+        width: 100%;
+    }
+
+    .ri-auction-fill {
+        font-size: 1.8rem;
+    }
+
+    .wrapper {
+        width: 85vw;
+        gap: 15px;
+    }
+
+    .contenedor {
+        width: 26vmin;
+        height: 26vmin;
+        font-size: 14px;
+    }
+
+    .card-item {
+        flex: 1 1 calc(33.33% - 20px); /* 3 cards por fila */
+    }
+}
+
+/* Responsivo para pantallas pequeñas */
+@media screen and (max-width: 769px) {
+
+    .hero-panel {
+        height: 40vh; /* Ajusta altura para pantallas pequeñas */
+    }
+
+    .hero-content {
+        font-size: medium; /* Ajusta tamaño de fuente */
+        padding: 1.5rem;
+    }
+
+    .ri-auction-fill {
+        font-size: 1.5rem;
+    }
+
+    .wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .contenedor {
+        width: calc(50% - 20px); /* Dos por fila */
+        height: auto;
+    }
+
+    .card-item {
+        flex: 1 1 calc(50% - 20px); /* 2 cards por fila */
+    }
+
+    .porque-elegirnos {
+        flex-direction: column; /* Apilar columnas */
+      }
+    
+      .right-column {
+        grid-template-columns: 1fr; /* Una sola columna en lugar de dos */
+      }
+}
+
+/* Responsivo para pantallas muy pequeñas */
+@media screen and (max-width: 425px) {
+    .hero-panel {
+        height: 35vh; /* Menor altura para móviles */
+    }
+
+    .hero-content {
+        font-size: small;
+        padding: 1rem;
+        max-width: 90%;
+    }
+
+    .ri-auction-fill {
+        font-size: 1.2rem;
+    }
+
+    .wrapper {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .contenedor {
+        width: 100%;
+        height: auto;
+        font-size: 12px;
+    }
+
+    .contenedor .num {
+        font-size: 2em;
+    }
+
+    .contenedor .text {
+        font-size: 0.9em;
+    }
+
+    .card-item {
+        flex: 1 1 100%; /* 1 card por fila */
+    }
+
+    .porque-elegirnos {
+        padding: 1rem;
+      }
+    
+      .left-column h2 {
+        font-size: 1.5rem; /* Reducir tamaño del texto */
+      }
+    
+      .btn {
+        width: 100%; /* Botón ocupa todo el ancho */
+        padding: 0.75rem;
+        font-size: 1rem;
+      }
+    
+      .right-column {
+        gap: 0.5rem; /* Reducir espacio entre bloques */
+      }
+    
+      .block {
+        padding: 0.75rem; /* Reducir padding en bloques */
+      }
+}
