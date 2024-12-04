@@ -248,6 +248,21 @@ footer {
   text-align: center;
 }
 
+footer nav ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer nav ul li a{
+  color: var(--white-color);
+}
+
+footer nav{
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+  margin-top: 1rem;
+}
+
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */

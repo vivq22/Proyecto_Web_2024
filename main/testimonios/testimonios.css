@@ -1,0 +1,396 @@
+/* Importación de fuente */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+/* Reset y estilos globales */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body { 
+    font-size: 16px;
+    background-color: #0e0e2d;
+    color: #fff;
+    margin: 0;
+}
+
+main {
+    background-color: #0e0e2d;
+    color: #fff;
+}
+
+/* Sección Hero */
+.hero-panel {
+    position: relative; 
+    overflow: hidden;
+    background-color: #0e0e2d;
+    height: 55vh;
+}
+
+.hero-panel img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transform: translate(0%, -20%);
+    opacity: 0.5;
+}
+
+.hero-panel a.fondo_oscuro {
+    position: absolute;
+    background-color: rgba(14, 14, 45, 0.6);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.hero-content {
+    font-size: xx-large;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2.5rem 4rem;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+    max-width: 90%;
+    width: 1400px;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Sección Testimonios */
+.testimonios {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #0e0e2d;
+}
+
+.titulo-principal {
+    font-size: 2.5rem;
+    color: #f0c75e;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.subtitulo {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #fff;
+    font-style: italic;
+}
+
+.descripcion {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+
+/* Contenedor de testimonios */
+.contenedor-testimonios {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Tarjetas de testimonio */
+.tarjeta-testimonio {
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-testimonio:hover {
+    transform: translateY(-10px);
+}
+
+.tarjeta-testimonio .nombre {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.tarjeta-testimonio .titulo-trabajo {
+    font-style: italic;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.tarjeta-testimonio .comentario {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.estrellas {
+    font-size: 1.2rem;
+    color: #f0c75e;
+}
+
+/* Sección Casos de Éxito */
+.casos-exito {
+    background-color: #0e0e2d;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.casos-exito .titulo-principal {
+    font-size: 2.5rem;
+    color: #f0c75e;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.casos-exito .descripcion {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.contenedor-casos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Caso de éxito */
+.caso {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.caso:hover {
+    transform: translateY(-5px);
+}
+
+.caso .imagen-caso {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+}
+
+.caso .contenido-caso {
+    padding: 20px;
+    text-align: left;
+    width: 70%;
+}
+
+.caso .titulo-caso {
+    font-size: 1.5rem;
+    color: #0e0e2d;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.caso .descripcion-caso {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Estilos responsivos para tablets y celulares */
+@media screen and (max-width: 1024px) {
+    /* Ajustes generales */
+    body {
+        font-size: 14px;
+    }
+
+    .hero-content {
+        padding: 2rem;
+        font-size: 1.5rem;
+        width: 90%;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    /* Testimonios */
+    .contenedor-testimonios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta-testimonio {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    /* Casos de Éxito */
+    .contenedor-casos {
+        gap: 15px;
+    }
+
+    .caso {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .caso .imagen-caso {
+        width: 100%;
+        height: 200px;
+    }
+
+    .caso .contenido-caso {
+        width: 100%;
+        text-align: center;
+    }
+
+    .caso .titulo-caso {
+        font-size: 1.3rem;
+    }
+
+    .caso .descripcion-caso {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Hero Panel */
+    .hero-panel {
+        height: 45vh;
+    }
+
+    .hero-content {
+        font-size: 1.2rem;
+        padding: 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.8rem;
+    }
+
+    .hero-panel img{
+        transform: translate(0%, -0%);
+    }
+
+    /* Títulos principales */
+    .titulo-principal {
+        font-size: 2rem;
+    }
+
+    /* Testimonios */
+    .contenedor-testimonios {
+        gap: 10px;
+    }
+
+    .tarjeta-testimonio {
+        padding: 15px;
+    }
+
+    /* Casos de Éxito */
+    .caso {
+        flex-direction: column;
+        max-width: 95%;
+    }
+
+    .caso .imagen-caso {
+        height: 150px;
+    }
+
+    .caso .titulo-caso {
+        font-size: 1.2rem;
+    }
+
+    .caso .descripcion-caso {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Ajustes para pantallas muy pequeñas */
+    body {
+        font-size: 12px;
+    }
+
+    .hero-content {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .hero-content p {
+        font-size: 0.7rem;
+    }
+
+    /* Títulos principales */
+    .titulo-principal {
+        font-size: 1.8rem;
+    }
+
+    .descripcion {
+        font-size: 0.9rem;
+    }
+
+    /* Testimonios */
+    .contenedor-testimonios {
+        gap: 5px;
+    }
+
+    .tarjeta-testimonio {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    /* Casos de Éxito */
+    .caso {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .caso .imagen-caso {
+        height: 120px;
+    }
+
+    .caso .titulo-caso {
+        font-size: 1rem;
+    }
+
+    .caso .descripcion-caso {
+        font-size: 0.7rem;
+    }
+}
