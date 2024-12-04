@@ -1,0 +1,347 @@
+/*PAGINA NOSOTROS CSS Desktop*/
+@media screen and (min-width: 1024px) {
+    .about {
+      width: 100%;
+      padding: 78px 0;
+      background-color: hsl(220, 20%, 18%);
+      margin-top: 5rem;
+    }
+  
+    .about img{
+      height: auto;
+      width: 450px;
+    }
+    
+    .about-text{
+      width: 550px;
+    }
+  
+    .main-aboutus{
+      background-color: hsl(220, 20%, 18%);
+      width: 1130px;
+      max-width: 95%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  
+    .about-text h1{
+      color: #fff;
+      font-size: 80px;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+    }
+  
+    .about-text p{
+      color: #fff;
+      letter-spacing: 1px;
+      line-height: 28px;
+      font-size: 18px;
+      margin-bottom: 45px;
+    }
+  
+    .about-section {
+      padding: 50px 20px;
+      background-color: #10172a;
+    }
+    
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+    
+    .about-left {
+      flex: 1;
+      max-width: 600px;
+    }
+    
+    .quote {
+      font-size: 24px;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #f8d97a; /* Color dorado */
+    }
+    
+    .mission-vision {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    
+    .mission, .vision {
+      flex: 1;
+      padding: 20px;
+      background-color: #ffffff; /* Fondo blanco */
+      color: #10172a; /* Texto oscuro */
+      text-align: center;
+      border-radius: 10px;
+    }
+    
+    .mission h3, .vision h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    
+    /* Imagen */
+    .about-right {
+      flex: 1;
+      max-width: 400px;
+    }
+    
+    .about-image {
+      width: 100%;  /*antes estaba en 100*/
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+  
+  
+  }
+  
+  /* =========== Linea de tiempo Responsiva en Celular y Desktop=========== */
+  
+  .timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 9%;
+    background-color: hsl(220, 20%, 18%);
+  }
+  
+  .timeline .timeline-row {
+    display: flex;
+    column-gap: 64px;
+    flex-wrap: wrap;
+  }
+  
+  .timeline-row .timeline-column{
+    flex: 1 1 320px;
+  }
+  
+  .timeline-column .title{
+    position: relative;
+    display: inline-block;
+    font-size: 28px;
+    color: #fff;
+    margin: 32px 0 16px 30px;
+  
+  }
+  
+  .timeline-column .timeline-box{
+    position: relative;
+    border-left: 2px solid #0efcfd;
+    margin-left: 40px;
+  
+  }
+  
+  .timeline-box .timeline-content{
+    position: relative;
+    padding-left: 27px;
+  }
+  
+  .timeline-box .timeline-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10.5px    ;
+    width: 20px;
+    height: 20px;
+    background-color: #0efcfd;
+    border-radius: 50%;
+  }
+  
+  .timeline-content .content{
+    padding: 24px;
+    border: 2px solid #0efcfd;
+    border-radius: 8px;
+    margin-bottom: 32px;
+  }
+  
+  .timeline-content .content .year{
+    font-size: 16px;
+    color: #0efcfd;
+  }
+  
+  .timeline-content .content .year i{
+    margin-right: 8px;
+  }
+  
+  .timeline-content .content h3{
+    font-size: 19px;
+    margin: 8px 0;
+    color: #fff;
+  }
+  
+  .timeline-content .content p{
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  /* Para al inicio de pagina*/
+  .btn-top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+    background-color: #f8d97a;
+    color: hsl(220, 100%, 97%);
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color .3s;
+  }
+  
+  /*Para Celulares*/
+  @media screen and (max-width: 340px) {
+    .about {
+      padding: 20px 10px; /* Reduce padding para ajustarlo a la pantalla */
+      margin-top: 2rem; /* Reduce el margen superior */
+    }
+  
+    .main-aboutus {
+      flex-direction: column; /* Cambia a disposición en columna */
+      align-items: center; /* Centra los elementos */
+      justify-content: center; /* Centra los elementos verticalmente */
+    }
+  
+    .about img {
+      width: 100%; /* Imagen ocupa el ancho completo */
+      max-width: 330px; /* Limita el tamaño máximo de la imagen */
+      height: auto; /* Mantiene la proporción */
+      margin-bottom: 20px; /* Espaciado entre la imagen y el texto */
+    }
+  
+    .about-text {
+      width: 100%; /* Texto ocupa el ancho completo */
+      text-align: center; /* Centra el texto */
+    }
+  
+    .about-text h1 {
+      font-size: 24px; /* Ajusta el tamaño del título */
+      margin-bottom: 15px;
+    }
+  
+    .about-text p {
+      font-size: 14px; /* Reduce el tamaño del texto */
+      line-height: 20px; /* Reduce la altura de línea */
+    }
+  
+    .mission-vision {
+      flex-direction: column; /* Cambia la disposición a columna */
+      gap: 10px; /* Reduce el espacio entre los elementos */
+    }
+  
+    .mission, .vision {
+      padding: 15px; /* Reduce el padding */
+      font-size: 12px; /* Reduce el tamaño del texto */
+    }
+  
+    .mission h3, .vision h3 {
+      font-size: 16px; /* Ajusta el tamaño de los encabezados */
+    }
+  
+    .quote {
+      font-size: 18px; /* Ajusta el tamaño de la cita */
+      margin-bottom: 10px; /* Reduce el margen inferior */
+      color: #766636;
+      font-weight: 600;
+      align-self:center ;
+    }
+  
+    .about-right {
+      max-width: 100%; /* Imagen ocupa el ancho completo */
+      margin-top: 20px; /* Agrega espacio superior para separarla del texto */
+    }
+  
+    .about-image {
+      width: 100%; /* Imagen ocupa todo el ancho */
+      max-width: 300px; /* Limita el tamaño máximo */
+      border-radius: 8px; /* Ajusta el borde redondeado */
+    }
+  }
+  
+  /*Para Tablets*/
+  
+  @media screen and (max-width: 768px){
+    .about {
+      padding: 15px 20px; /* Ajusta el padding para reducir espacios */
+      margin-top: 3rem; /* Reduce el margen superior */
+    }
+  
+    .main-aboutus {
+      flex-direction: column; /* Cambia a columna si el espacio es muy estrecho */
+      align-items: center; /* Centra los elementos */
+      margin-bottom: 0; /* Elimina el margen inferior */
+    }
+  
+    .about img {
+      width: 100%; /* Imagen ocupa el ancho completo */
+      margin-bottom: 20px; /* Espaciado entre imagen y texto */
+    }
+  
+    .about-text {
+      width: 100%; /* Texto ocupa el ancho completo */
+      text-align: center; /* Centra el texto */
+      margin-bottom: 20px; /* Espaciado adicional */
+    }
+  
+    .about-text h1 {
+      font-size: 40px; /* Ajusta el tamaño del título */
+      margin-bottom: 15px;
+      color: rgb(39,74,93);;
+      font-style: oblique;
+    }
+  
+    .about-text p {
+      font-size: 16px; /* Reduce el tamaño del texto */
+      line-height: 24px; /* Mejora la legibilidad */
+    }
+
+    .mission-vision {
+      flex-direction: column; /* Cambia a columna */
+      gap: 15px; /* Espacio entre elementos */
+      margin-top: 20px; /* Espaciado superior */
+      border: rgb(39,74,93) 3px solid; /* Agrega borde */
+    }
+  
+    .mission, .vision {
+      padding: 15px; /* Reduce el padding */
+      font-size: 14px; /* Reduce el tamaño del texto */
+    }
+  
+    .mission h3, .vision h3 {
+      font-size: 18px; /* Ajusta el tamaño de los encabezados */
+      text-align: center;
+    }
+  
+    .quote {
+      font-size: 24px; /* Ajusta el tamaño de la cita */
+      margin-bottom: 15px; /* Reduce el margen inferior */
+      color: rgb(39,74,93);
+      font-weight: 600;
+      font-style: italic;
+      text-align: center;
+    }
+  
+    .about-right {
+      max-width: 100%; /* Imagen ocupa todo el ancho */
+      margin-top: 20px; /* Espacio superior */
+    }
+  
+    .about-image {
+      width: 100%; /* Imagen ocupa el ancho completo */
+      max-width: 400px; /* Tamaño máximo */
+      border-radius: 10px; /* Bordes redondeados */
+      margin-bottom: 20px; /* Espaciado inferior */
+      
+    }
+  }
+  
