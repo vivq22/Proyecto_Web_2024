@@ -66,69 +66,68 @@ main {
     font-size: 2rem;
     color: #FFD700;
 }
-    /*Contador Numerico*/
-    .prueba {
-        padding: 2em 0; /* Espaciado alrededor de la sección */
-        text-align: center;
-        background-color: hsl(220, 20%, 18%); /* Fondo claro para separarla del HeroPanel */
-    }
 
-    .wrapper{
-        
-        position: relative; /* Cambiado de absolute a relative */
-        width: 90%; /* Mejor ajuste dinámico */
-        margin: 0 auto; /* Centrado horizontal */
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap; /* Para que los elementos se acomoden si hay menos espacio */
-        gap: 20px; /* Espaciado entre contenedores */
-    }
+.prueba {
+    padding: 2em 0; 
+    text-align: center;
+    background-color: hsl(220, 20%, 18%); 
+}
 
-    .contenedor{
-        width: 25%; /* Ajusta según tus necesidades */
-        max-width: 200px; /* Para evitar que se estiren demasiado */
-        height: auto;
-        padding: 1em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 0.5em;
-        background-color: hsl(220, 24%, 15%);
-        border-bottom: 10px solid #FFD700;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade un poco de sombra */
-    }
+.wrapper{ 
+    position: relative; 
+    width: 90%; 
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
 
-    .wrapper .contenedor i {
-        color: #FFD700;
-        font-size: 2.5em;
-        margin-bottom: 0.5em;
-    }
+.contenedor{
+    width: 25%; 
+    max-width: 200px; 
+    height: auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5em;
+    background-color: hsl(220, 24%, 15%);
+    border-bottom: 10px solid #FFD700;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.wrapper .contenedor i {
+    color: #FFD700;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
     
-    .wrapper .contenedor .num {
-        color: #fff;
-        font-weight: 600;
-        font-size: 2em;
-    }
+.wrapper .contenedor .num {
+    color: #fff;
+    font-weight: 600;
+    font-size: 2em;
+}
     
-    .wrapper .contenedor .text {
-        color: #fff;
-        font-size: 1em;
-        text-align: center;
-        margin-top: 0.5em;
-        font-weight: 400;
-        line-height: 1.2;
-    }
+.wrapper .contenedor .text {
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 0.5em;
+    font-weight: 400;
+    line-height: 1.2;
+}
 
-    .intro-servicios{
-        padding: 4em 0; /* Espaciado alrededor de la sección */
-        text-align: center;
-        background-color: hsl(220, 20%, 18%); /* Fondo claro para separarla del HeroPanel */
-        color: #fff;
-    }
+.intro-servicios{
+    padding: 4em 0; 
+    text-align: center;
+    background-color: hsl(220, 20%, 18%); 
+    color: #fff;
+}
 
 .carrusel{
-    background-color: hsl(220, 20%, 18%); /* Fondo claro para separarla del HeroPanel */
+    background-color: hsl(220, 20%, 18%); 
 }
 
 .card-list .card-item .card-link{
@@ -197,65 +196,61 @@ main {
 }
 
 .card-list {
-    display: flex; /* Cambia la disposición de los elementos a flexbox */
-    flex-wrap: wrap; /* Permite que las cards se ajusten en varias filas si es necesario */
-    gap: 20px; /* Espaciado entre las cards */
-    justify-content: center; /* Centra las cards horizontalmente */
-    padding: 20px; /* Espaciado interno del contenedor */
-    list-style: none; /* Elimina el estilo de lista */
-    margin: 0; /* Elimina márgenes por defecto */
-    padding: 0; /* Elimina relleno por defecto */
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+    padding: 20px; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
 }
 
 .card-item {
-    flex: 1 1 calc(25% - 20px); /* Ajusta las cards para ocupar el 25% del contenedor menos el espaciado */
-    max-width: 400px; /* Ancho máximo para mantener las proporciones */
+    flex: 1 1 calc(25% - 20px); 
+    max-width: 400px; 
 }
-
-/*Section porque elegirnos*/
 
 .porque-elegirnos {
     display: flex;
     justify-content: space-between;
     padding: 2rem;
     margin: auto;
-    background-color: hsl(0, 0%, 100%); /* Fondo claro */
+    background-color: hsl(0, 0%, 100%); 
     color: #fff;
-    flex-wrap: wrap; /* Permitir que las columnas se envuelvan en pantallas pequeñas */
+    flex-wrap: wrap; 
   }
   
-  /* Columna izquierda */
-  .left-column {
+
+.left-column {
     flex: 1;
     padding: 1rem;
     background-color: #ffffff;
     color: #1a1a2e;
     border-radius: 8px;
-    margin-bottom: 1rem; /* Separación entre bloques cuando se apilen */
-  }
+    margin-bottom: 1rem; 
+}
   
-  /* Columna derecha */
-  .right-column {
+.right-column {
     flex: 2;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas grandes */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 1rem;
     padding: 1rem;
-  }
-  
-  /* Bloques de la columna derecha */
-  .block {
+}
+
+.block {
     background-color: var(--black-color);
     padding: 1rem;
     border-radius: 8px;
-  }
+}
   
-  .block h3 {
+.block h3 {
     margin-bottom: 0.5rem;
     color: #ffc107;
-  }
+}
 
-  .btn {
+.btn {
     padding: 0.5rem 1rem;
     background-color: #ffc107;
     border: none;
@@ -264,17 +259,17 @@ main {
     cursor: pointer;
     font-size: 1rem;
     margin-top: 2rem;
-  }
+}
 
-    /* Responsivo para pantallas medianas */
+    
 @media screen and (max-width: 1024px) {
 
     .hero-panel {
-        height: 45vh; /* Reduce altura en pantallas medianas */
+        height: 45vh; 
     }
 
     .hero-content {
-        font-size: large; /* Reduce tamaño de fuente */
+        font-size: large; 
         padding: 2rem;
         max-width: 80%;
     }
@@ -300,19 +295,18 @@ main {
     }
 
     .card-item {
-        flex: 1 1 calc(33.33% - 20px); /* 3 cards por fila */
+        flex: 1 1 calc(33.33% - 20px); 
     }
 }
 
-/* Responsivo para pantallas pequeñas */
 @media screen and (max-width: 769px) {
 
     .hero-panel {
-        height: 40vh; /* Ajusta altura para pantallas pequeñas */
+        height: 40vh; 
     }
 
     .hero-content {
-        font-size: medium; /* Ajusta tamaño de fuente */
+        font-size: medium; 
         padding: 1.5rem;
     }
 
@@ -327,27 +321,26 @@ main {
     }
 
     .contenedor {
-        width: calc(50% - 20px); /* Dos por fila */
+        width: calc(50% - 20px); 
         height: auto;
     }
 
     .card-item {
-        flex: 1 1 calc(50% - 20px); /* 2 cards por fila */
+        flex: 1 1 calc(50% - 20px); 
     }
 
     .porque-elegirnos {
-        flex-direction: column; /* Apilar columnas */
+        flex-direction: column; 
       }
     
       .right-column {
-        grid-template-columns: 1fr; /* Una sola columna en lugar de dos */
+        grid-template-columns: 1fr; 
       }
 }
 
-/* Responsivo para pantallas muy pequeñas */
 @media screen and (max-width: 425px) {
     .hero-panel {
-        height: 35vh; /* Menor altura para móviles */
+        height: 35vh; 
     }
 
     .hero-content {
@@ -380,28 +373,28 @@ main {
     }
 
     .card-item {
-        flex: 1 1 100%; /* 1 card por fila */
+        flex: 1 1 100%; 
     }
 
     .porque-elegirnos {
         padding: 1rem;
       }
     
-      .left-column h2 {
-        font-size: 1.5rem; /* Reducir tamaño del texto */
-      }
+    .left-column h2 {
+        font-size: 1.5rem; 
+    }
     
-      .btn {
-        width: 100%; /* Botón ocupa todo el ancho */
+    .btn {
+        width: 100%; 
         padding: 0.75rem;
         font-size: 1rem;
-      }
+    }
     
-      .right-column {
-        gap: 0.5rem; /* Reducir espacio entre bloques */
-      }
+    .right-column {
+        gap: 0.5rem; 
+    }
     
-      .block {
-        padding: 0.75rem; /* Reducir padding en bloques */
-      }
+    .block {
+        padding: 0.75rem; 
+    }
 }
