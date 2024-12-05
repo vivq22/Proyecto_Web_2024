@@ -1,4 +1,3 @@
-/*PAGINA NOSOTROS CSS Desktop*/
 @media screen and (min-width: 1024px) {
     .about {
       width: 100%;
@@ -64,7 +63,7 @@
       font-style: italic;
       text-align: center;
       margin-bottom: 20px;
-      color: #f8d97a; /* Color dorado */
+      color: #f8d97a; 
     }
     
     .mission-vision {
@@ -76,8 +75,8 @@
     .mission, .vision {
       flex: 1;
       padding: 20px;
-      background-color: #ffffff; /* Fondo blanco */
-      color: #10172a; /* Texto oscuro */
+      background-color: #ffffff; 
+      color: #10172a; 
       text-align: center;
       border-radius: 10px;
     }
@@ -88,22 +87,18 @@
       font-weight: bold;
     }
     
-    /* Imagen */
+
     .about-right {
       flex: 1;
       max-width: 400px;
     }
     
     .about-image {
-      width: 100%;  /*antes estaba en 100*/
+      width: 100%;  
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    }
-  
-  
+    }  
   }
-  
-  /* =========== Linea de tiempo Responsiva en Celular y Desktop=========== */
   
   .timeline {
     display: flex;
@@ -183,7 +178,6 @@
     color: #fff;
   }
   
-  /* Para al inicio de pagina*/
   .btn-top{
     position: fixed;
     bottom: 2rem;
@@ -199,132 +193,131 @@
     transition: background-color .3s;
   }
   
-  /*Para Celulares*/
-  @media screen and (max-width: 340px) {
-    .about {
-      padding: 20px 10px; /* Reduce padding para ajustarlo a la pantalla */
-      margin-top: 2rem; /* Reduce el margen superior */
-    }
-  
-    .main-aboutus {
-      flex-direction: column; /* Cambia a disposición en columna */
-      align-items: center; /* Centra los elementos */
-      justify-content: center; /* Centra los elementos verticalmente */
-    }
-  
-    .about img {
-      width: 100%; /* Imagen ocupa el ancho completo */
-      max-width: 330px; /* Limita el tamaño máximo de la imagen */
-      height: auto; /* Mantiene la proporción */
-      margin-bottom: 20px; /* Espaciado entre la imagen y el texto */
-    }
-  
-    .about-text {
-      width: 100%; /* Texto ocupa el ancho completo */
-      text-align: center; /* Centra el texto */
-    }
-  
-    .about-text h1 {
-      font-size: 24px; /* Ajusta el tamaño del título */
-      margin-bottom: 15px;
-    }
-  
-    .about-text p {
-      font-size: 14px; /* Reduce el tamaño del texto */
-      line-height: 20px; /* Reduce la altura de línea */
-    }
-  
-    .mission-vision {
-      flex-direction: column; /* Cambia la disposición a columna */
-      gap: 10px; /* Reduce el espacio entre los elementos */
-    }
-  
-    .mission, .vision {
-      padding: 15px; /* Reduce el padding */
-      font-size: 12px; /* Reduce el tamaño del texto */
-    }
-  
-    .mission h3, .vision h3 {
-      font-size: 16px; /* Ajusta el tamaño de los encabezados */
-    }
-  
-    .quote {
-      font-size: 18px; /* Ajusta el tamaño de la cita */
-      margin-bottom: 10px; /* Reduce el margen inferior */
-      color: #766636;
-      font-weight: 600;
-      align-self:center ;
-    }
-  
-    .about-right {
-      max-width: 100%; /* Imagen ocupa el ancho completo */
-      margin-top: 20px; /* Agrega espacio superior para separarla del texto */
-    }
-  
-    .about-image {
-      width: 100%; /* Imagen ocupa todo el ancho */
-      max-width: 300px; /* Limita el tamaño máximo */
-      border-radius: 8px; /* Ajusta el borde redondeado */
-    }
+@media screen and (max-width: 340px) {
+
+  .about {
+    padding: 20px 10px; 
+    margin-top: 2rem; 
   }
   
-  /*Para Tablets*/
+  .main-aboutus {
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+  }
   
+  .about img {
+    width: 100%; 
+    max-width: 330px; 
+    height: auto; 
+    margin-bottom: 20px; 
+  }
+  
+  .about-text {
+    width: 100%; 
+    text-align: center; 
+  }
+  
+  .about-text h1 {
+    font-size: 24px; 
+    margin-bottom: 15px;
+  }
+  
+  .about-text p {
+    font-size: 14px; 
+    line-height: 20px; 
+  }
+  
+  .mission-vision {
+    flex-direction: column; 
+    gap: 10px; 
+  }
+  
+  .mission, .vision {
+    padding: 15px; 
+    font-size: 12px; 
+  }
+  
+  .mission h3, .vision h3 {
+    font-size: 16px; 
+  }
+  
+  .quote {
+    font-size: 18px; 
+    margin-bottom: 10px; 
+    color: #766636;
+    font-weight: 600;
+    align-self:center ;
+  }
+
+  .about-right {
+    max-width: 100%; 
+    margin-top: 20px; 
+  }
+
+  .about-image {
+    width: 100%; 
+    max-width: 300px;
+    border-radius: 8px; 
+  }
+}
+  
+
   @media screen and (max-width: 768px){
     .about {
-      padding: 15px 20px; /* Ajusta el padding para reducir espacios */
-      margin-top: 3rem; /* Reduce el margen superior */
+      padding: 15px 20px; 
+      margin-top: 3rem; 
     }
   
     .main-aboutus {
-      flex-direction: column; /* Cambia a columna si el espacio es muy estrecho */
-      align-items: center; /* Centra los elementos */
-      margin-bottom: 0; /* Elimina el margen inferior */
+      flex-direction: column; 
+      align-items: center; 
+      margin-bottom: 0; 
     }
   
     .about img {
-      width: 100%; /* Imagen ocupa el ancho completo */
-      margin-bottom: 20px; /* Espaciado entre imagen y texto */
+      width: 100%; 
+      margin-bottom: 20px; 
     }
   
     .about-text {
-      width: 100%; /* Texto ocupa el ancho completo */
-      text-align: center; /* Centra el texto */
-      margin-bottom: 20px; /* Espaciado adicional */
+      width: 100%; 
+      text-align: center; 
+      margin-bottom: 20px; 
     }
   
     .about-text h1 {
-      font-size: 40px; /* Ajusta el tamaño del título */
+      font-size: 40px; 
       margin-bottom: 15px;
       color: rgb(39,74,93);;
       font-style: oblique;
     }
   
     .about-text p {
-      font-size: 16px; /* Reduce el tamaño del texto */
-      line-height: 24px; /* Mejora la legibilidad */
+      font-size: 16px; 
+      line-height: 24px; 
     }
 
     .mission-vision {
-      flex-direction: column; /* Cambia a columna */
-      gap: 15px; /* Espacio entre elementos */
-      margin-top: 20px; /* Espaciado superior */
-      border: rgb(39,74,93) 3px solid; /* Agrega borde */
+      flex-direction: column; 
+      gap: 15px; 
+      margin-top: 20px; 
+      border: rgb(39,74,93) 3px solid; 
     }
   
     .mission, .vision {
-      padding: 15px; /* Reduce el padding */
-      font-size: 14px; /* Reduce el tamaño del texto */
+      padding: 15px; 
+      font-size: 14px; 
     }
   
     .mission h3, .vision h3 {
-      font-size: 18px; /* Ajusta el tamaño de los encabezados */
+      font-size: 18px; 
       text-align: center;
     }
   
     .quote {
-      font-size: 24px; /* Ajusta el tamaño de la cita */
-      margin-bottom: 15px; /* Reduce el margen inferior */
+      font-size: 24px; 
+      margin-bottom: 15px; 
       color: rgb(39,74,93);
       font-weight: 600;
       font-style: italic;
@@ -332,15 +325,15 @@
     }
   
     .about-right {
-      max-width: 100%; /* Imagen ocupa todo el ancho */
-      margin-top: 20px; /* Espacio superior */
+      max-width: 100%; 
+      margin-top: 20px; 
     }
   
     .about-image {
-      width: 100%; /* Imagen ocupa el ancho completo */
-      max-width: 400px; /* Tamaño máximo */
-      border-radius: 10px; /* Bordes redondeados */
-      margin-bottom: 20px; /* Espaciado inferior */
+      width: 100%; 
+      max-width: 400px; 
+      border-radius: 10px; 
+      margin-bottom: 20px; 
       
     }
   }

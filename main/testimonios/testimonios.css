@@ -1,7 +1,5 @@
-/* Importación de fuente */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
-/* Reset y estilos globales */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -21,7 +19,6 @@ main {
     color: #fff;
 }
 
-/* Sección Hero */
 .hero-panel {
     position: relative; 
     overflow: hidden;
@@ -75,7 +72,6 @@ main {
     margin-bottom: 1rem;
 }
 
-/* Sección Testimonios */
 .testimonios {
     text-align: center;
     padding: 50px 20px;
@@ -102,7 +98,6 @@ main {
     color: #ccc;
 }
 
-/* Contenedor de testimonios */
 .contenedor-testimonios {
     display: flex;
     justify-content: center;
@@ -110,7 +105,6 @@ main {
     flex-wrap: wrap;
 }
 
-/* Tarjetas de testimonio */
 .tarjeta-testimonio {
     background-color: #fff;
     color: #000;
@@ -149,7 +143,6 @@ main {
     color: #f0c75e;
 }
 
-/* Sección Casos de Éxito */
 .casos-exito {
     background-color: #0e0e2d;
     color: #fff;
@@ -177,7 +170,6 @@ main {
     align-items: center;
 }
 
-/* Caso de éxito */
 .caso {
     display: flex;
     flex-direction: row;
@@ -221,9 +213,8 @@ main {
     line-height: 1.5;
 }
 
-/* Estilos responsivos para tablets y celulares */
 @media screen and (max-width: 1024px) {
-    /* Ajustes generales */
+
     body {
         font-size: 14px;
     }
@@ -242,7 +233,6 @@ main {
         font-size: 0.9rem;
     }
 
-    /* Testimonios */
     .contenedor-testimonios {
         flex-direction: column;
         align-items: center;
@@ -253,7 +243,6 @@ main {
         margin-bottom: 20px;
     }
 
-    /* Casos de Éxito */
     .contenedor-casos {
         gap: 15px;
     }
@@ -283,7 +272,7 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-    /* Hero Panel */
+
     .hero-panel {
         height: 45vh;
     }
@@ -305,12 +294,10 @@ main {
         transform: translate(0%, -0%);
     }
 
-    /* Títulos principales */
     .titulo-principal {
         font-size: 2rem;
     }
 
-    /* Testimonios */
     .contenedor-testimonios {
         gap: 10px;
     }
@@ -319,7 +306,6 @@ main {
         padding: 15px;
     }
 
-    /* Casos de Éxito */
     .caso {
         flex-direction: column;
         max-width: 95%;
@@ -339,7 +325,7 @@ main {
 }
 
 @media screen and (max-width: 480px) {
-    /* Ajustes para pantallas muy pequeñas */
+
     body {
         font-size: 12px;
     }
@@ -357,7 +343,6 @@ main {
         font-size: 0.7rem;
     }
 
-    /* Títulos principales */
     .titulo-principal {
         font-size: 1.8rem;
     }
@@ -366,7 +351,6 @@ main {
         font-size: 0.9rem;
     }
 
-    /* Testimonios */
     .contenedor-testimonios {
         gap: 5px;
     }
@@ -376,7 +360,6 @@ main {
         max-width: 100%;
     }
 
-    /* Casos de Éxito */
     .caso {
         flex-direction: column;
         max-width: 100%;
