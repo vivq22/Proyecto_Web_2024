@@ -1,0 +1,642 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+body{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    background: var(--black-color);
+    color: var(--white-color);
+}
+
+main{
+    background-color: var(--black-color);
+    color: var(--black-color);
+}
+
+.panel_principal {
+    position: relative; 
+    overflow: hidden;
+    background-color: var(--black-color);
+    height: 100vh;
+}
+
+.panel_principal img {
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+    transform: translate(0%, -20%);
+
+}
+
+.panel_principal a.fondo_oscuro{
+    position: absolute;
+    align-self: center center;  
+    padding: 0.5rem 1.5rem;
+    background-color: rgba(14, 14, 45, 0.6);
+    color: var(--black-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2.5rem 4rem;
+    height: 150vh;
+    width: 300vh;
+}
+
+.panel_principal a.btn_cita{    
+    display: flex;
+    position: absolute;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--buttom-color);
+    color: var(--white-color);
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 50%;
+    font-weight: bold;
+}
+
+.panel_contenido {
+    font-size: xx-large;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2.5rem 4rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.panel_contenido h1{
+    color: #ffffff;
+    width: 1400px;
+    z-index: 100;
+}
+
+.panel_contenido a.frase{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55%;
+    color: #ffffff;
+    width: 1400px;
+    top: 85%;
+}
+
+.nuestros_servicios{
+    position: relative; 
+    overflow: hidden;
+    background-color: var(--black-color-light);
+}
+
+.nuestros_servicios h2{
+    position: relative;
+    display: flex;
+    color: var(--white-color);
+    font-style: bolder;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    font-size: 200%;
+}
+
+.servicios{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    align-self: center;
+    background-color: var(--white-color);
+    height: 150px;
+    width: 325px;
+    transform: translate(15%, 30%);
+    border-radius: 7px;
+}
+
+.servicios a{
+    margin: 0rem auto;
+    transform: translate(0%, 100%);
+    font-style: var(--font-semi-bold);
+}
+
+.servicios img{
+    display: flex;
+    align-self: center;
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    transform: translate(150px, -20px);
+}
+
+.nuestros_servicios a.btn_servicios{
+    color: var(--white-color);
+    background-color: var(--buttom-color);
+    display: flex;
+    position: absolute;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 240px;
+    font-size: 80%;
+    font-weight: bold;
+}
+
+.estadisticas_logros{
+    position: relative; 
+    overflow: hidden;
+    background-color: var(--white-color);
+}
+
+.estadisticas_logros h2{
+    position: relative;
+    display: flex;
+    color: var(--black-color);
+    font-style: bolder;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    top: 10%;
+    font-size: 200%;
+}
+
+.tarjeta{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    align-self: center;
+    background-color: var(--white-color);
+    height: 150px;
+    transform: translate(15%, -0%);
+    border-radius: 7px;
+}
+
+.tarjeta a{
+    font-style: var(--font-semi-bold);
+    font-size: 140%;
+}
+
+.tarjeta img{
+    display: flex;
+    position: absolute;
+    height: 75px;
+    width: 75px;
+}
+
+.tarjeta h3{
+    font-size: 150%;
+}
+
+.testimonios_clientes{
+    position: relative; 
+    overflow: hidden;
+    background-color: var(--black-color-light);
+}
+
+.testimonios_clientes h2{
+    position: relative;
+    display: flex;
+    color: var(--white-color);
+    font-style: bolder;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    font-size: 200%;
+}
+
+.cliente{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin: 15px;
+    align-self: center;
+    background-color: var(--white-color);
+    height: 200px;
+    width: 425px;
+    border-radius: 7px;
+}
+
+.cliente a{
+    font-size: 85%;
+    margin: 0rem auto;
+    width: 1000px;
+    transform: translate(15%, -60%);
+    font-style: var(--font-semi-bold);
+}
+
+.cliente a.profesion{
+    margin: 0rem auto;
+    width: 20px;
+    transform: translate(-310px, 60px);
+}
+
+.cliente img{
+    border-radius: 100%;
+    display: flex;
+    align-self: center;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    transform: translate(35px, 50px);
+}
+
+.cliente h3{
+    width: 100%;
+    font-size: 90%;
+    transform: translate(-190px, 41px);
+}
+
+.testimonios_clientes a.btn_testimonios{
+    color: var(--white-color);
+    background-color: var(--buttom-color);
+    display: flex;
+    position: absolute;
+    justify-content: left;
+    padding: 15px;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 80%;
+    font-weight: bold;
+    top: 7.1%;
+}
+
+.nuestro_equipo{
+    position: relative; 
+    overflow: hidden;
+    background-color: var(--white-color);
+    height:50vh;
+}
+
+.nuestro_equipo h2{
+    position: relative;
+    display: flex;
+    color: var(--black-color);
+    font-style: bolder;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    top: 10%;
+    font-size: 200%;
+}
+
+.equipo{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin: 75px;
+    align-self: center;
+    background-color: var(--white-color);
+    height: 200px;
+    border-radius: 7px;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    margin: 0.5rem auto;
+    box-shadow: 3px 3px 10px var(--black-color-light);
+}
+
+.equipo img{
+    border-radius: 25px;
+    display: flex;
+    align-self: center;
+    position: absolute;
+    transform: translate(5%, 0%);
+}
+
+.nuestro_equipo a.btn_equipo{
+    color: var(--white-color);
+    background-color: var(--buttom-color);
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 150px;
+    font-size: 80%;
+    font-weight: bold;
+    box-shadow: 3px 3px 5px var(--black-color-light);
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .panel_principal a.btn_cita{    
+        top: 150%;
+        left: 650px;
+        height: 60px;
+        width: 210px;
+    }
+
+    .panel_contenido h1{
+        font-size: 110%;
+    }
+
+    .nuestros_servicios{
+        height: 50vh;
+    }
+
+    .nuestros_servicios h2{
+        top: 10%;
+    }
+
+    .servicios{
+        margin: 15px;
+    }
+
+    .nuestros_servicios a.btn_servicios{
+        top: 82%;
+        left: 650px;
+    }
+
+    .estadisticas_logros{
+        height:50vh;
+    }
+
+    .tarjeta{
+        margin: 75px;
+        width: 325px;
+    }
+
+    .tarjeta a{
+        margin: 0rem auto;
+        transform: translate(-7%, 230%);
+    }
+
+    .tarjeta img{
+        transform: translate(123px, -40px);
+    }
+
+    .tarjeta h3{
+        transform: translate(141px, 25px);
+    }
+
+    .testimonios_clientes{
+        height: 50vh;
+    }
+
+    .testimonios_clientes h2{
+        top: 10%;
+    }
+
+    .cliente{
+        transform: translate(73%, 30%);
+    }
+
+
+    .testimonios_clientes a.btn_testimonios{
+        height: 290px;
+        width: 100px;
+        left: 1430px;
+    }
+
+    .equipo{
+        width: 500px;
+        transform: translate(100%, 30%);
+    }
+
+    .nuestro_equipo a.btn_equipo{
+        transform: translate(535%, -160%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .panel_principal a.btn_cita{    
+        top: 140%;
+        left: 700px;
+        height: 45px;
+        width: 150px;
+    }
+
+    .panel_contenido h1{
+        font-size: 60%;
+    }
+
+    .panel_contenido a.frase{
+        font-size: 40%;
+    }
+
+    .panel_contenido a.btn_cita{
+        font-size: 40%;
+    }
+
+    .nuestros_servicios{
+        height: 90vh;
+    }
+
+    .nuestros_servicios h2{
+        top: 5%;
+    }
+
+    .servicios{
+        margin: 15px 15px 15px 0px;
+    }
+
+    .nuestros_servicios a.btn_servicios{
+        top: 85%;
+        left: 260px;
+    }
+
+    .estadisticas_logros{
+        height:68vh;
+    }
+
+    .tarjeta{      
+        width: 200px;
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+
+    .tarjeta a{
+        transform: translate(-7%, 180%);
+        text-align: center;
+    }
+
+    .tarjeta img{
+        transform: translate(65px, -40px);
+    }
+
+    .tarjeta h3{
+        transform: translate(85px, 25px);
+    }
+
+    .testimonios_clientes{
+        height: 100vh;
+    }
+
+    .testimonios_clientes h2{
+        top: 7%;
+    }
+
+    .cliente{
+        transform: translate(25%, 30%);
+    }
+
+    .testimonios_clientes a.btn_testimonios{
+        height: 430px;
+        width: 70px;
+        left: 580px;
+        top: 111px;
+        text-align: center;
+    }
+
+    .equipo{
+        width: 525px;
+        transform: translate(24%, 20%);
+    }
+
+    .nuestro_equipo a.btn_equipo{
+        transform: translate(290%, -200%);
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .panel_principal {
+        margin-top: 10px;
+        height: 40vh;
+    }
+
+    .panel_principal div a.btn_cita{    
+        top: 105%;
+        left: 140px;
+        height: 20px;
+        width: 100px;
+    }
+
+    .panel_contenido {
+        font-size: 100%;
+    }
+
+    .panel_contenido h1{
+        width: 250px;
+        font-size: 90%;
+    }
+
+    .panel_contenido a.frase{
+        width: 250px;
+        top: 75%;
+        left: 17%;
+    }
+
+    .nuestros_servicios{
+        height: 145vh;
+    }
+
+    .nuestros_servicios h2{
+        top: 5%;
+        font-size: 100%;
+    }
+
+    .servicios{
+        margin: 15px 15px 15px 0px;
+        width: 300px;
+        transform: translate(0%, 30%);
+        margin-left: 10px;
+    }
+
+    div.servicios img{
+        transform: translate(140px, -20px);
+    }
+
+    .nuestros_servicios a.btn_servicios{
+        top: 91%;
+        left: 40px;
+    }
+
+    .estadisticas_logros{
+        height:150vh;
+    }
+
+    .estadisticas_logros h2{
+        top: 7%;
+        text-align: center;
+    }
+
+    .tarjeta{
+        width: 200px;
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+
+    .tarjeta a{
+        transform: translate(-7%, 145%);
+        text-align: center;
+    }
+
+    .tarjeta img{
+        transform: translate(65px, -25px);
+    }
+
+    .tarjeta h3{
+        transform: translate(85px, 25px);
+    }
+
+    .testimonios_clientes{
+        height: 110vh;
+    }
+
+    .testimonios_clientes h2{
+        top: 7%;
+        text-align: center;
+    }
+
+    .cliente{
+        width: 290px;
+        transform: translate(0%, 30%);
+    }
+
+    .cliente a{
+        font-size: 80%;
+        width: 3000px;
+        transform: translate(15%, -32%);
+    }
+
+    .cliente a.profesion{
+        width: 30px;
+        transform: translate(-165px, 70px);
+        color: var(--white-color);
+    }
+
+    .cliente h3{
+        display: flex;
+        width: 500px;
+        font-size: 80%;
+        transform: translate(-110px, 50px);
+        text-align: center;
+    }   
+
+    .testimonios_clientes a.btn_testimonios{
+        justify-content: center;
+        height: 30px;
+        width: 150px;
+        left: 25%;
+        top: 610px;
+        text-align: center;
+    }
+
+    .nuestro_equipo{
+        height:76vh;
+    }
+
+    .nuestro_equipo h2{
+        top: 7%;
+    }
+
+    .equipo{
+        height: 300px;
+        width: 280px;
+        transform: translate(7%, 20%);
+    }
+
+    .equipo img{
+        transform: translate(3%, -29%);
+    }
+
+    .nuestro_equipo a.btn_equipo{
+        transform: translate(55%, -85%);
+    }
+}

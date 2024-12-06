@@ -1,0 +1,570 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+body{
+    font-family: var(--body-font);
+    background-color: var(--body-color);
+    color: var(--white-color);
+}
+
+main{
+    background-color: var(--black-color);
+    color: var(--black-color);
+}
+
+.nuestro_equipo{
+    background-color: var(--black-color-light);
+}   
+
+.nuestro_equipo h1{
+    color: var(--buttom-color);
+}
+
+.nuestro_equipo a{
+    text-align: center;
+}
+
+.fundador{
+    background-color: var(--black-color);
+}
+
+.imagen_fundador{
+    align-items: center;
+    background-color: var(--white-color);
+
+}
+
+.fundador .titulo_fundador{
+    color: var(--white-color);
+    background-color: var(--buttom-color);
+}
+
+.fundador div.imagen_fundador ul.lista_fundador{
+    color: var(--black-color-light);
+    list-style-type: circle;
+}
+
+.equipo{
+    background-color: var(--black-color-light);
+}
+
+.equipo .titulo_equipo{
+    color: var(--white-color);
+    background-color: var(--buttom-color);
+}
+
+.card_integrante {
+    background-color: var(--white-color);
+    border-radius: 7px;
+}
+
+.card_integrante img {
+    border-radius: 7px;
+    box-shadow: 3px 3px 10px var(--black-color-lighten);
+}
+
+.card_integrante a{
+    color: var(--black-color-light);
+}
+
+.equipo div.card_integrante ul.lista_equipo{
+    color: var(--black-color-light);
+    list-style-type: circle;
+}
+
+.contactanos{
+    background-color: var(--white-color);
+}
+
+.contactanos .btn_contactanos{
+    color: var(--white-color);
+    background-color: var(--buttom-color);
+    display: flex;
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    body{
+        font-size: var(--normal-font-size);
+        background: var(--black-color);
+    }
+
+    .nuestro_equipo{
+        position: relative; 
+        overflow: hidden;
+        height:70vh;
+    }
+
+    .nuestro_equipo h1{
+        position: relative;
+        display: flex;
+        font-style: bolder;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        top: 43%;
+        left: -26.5%;
+        font-size: 300%;
+    }
+
+    .nuestro_equipo a{
+        position: relative;
+        display: flex;
+        color: var(--white-color);
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        top: 45%;
+        left: 3.5%;
+        font-size: 120%;
+        width: 40%;
+    }
+
+    .nuestro_equipo img{
+        display: flex;
+        align-self: center;
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        transform: translate(100%, -8%);
+    }
+
+    .fundador{
+        position: relative; 
+        overflow: hidden;
+        height:80vh;
+    }
+
+    .fundador h2{
+        position: relative;
+        display: flex;
+        color: var(--black-color);
+        font-style: bolder;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        top: 22%;
+        left: 14%;
+        font-size: 300%;
+        color: var(--black-color);
+        z-index: 1;
+    }
+
+    .imagen_fundador{
+        position: relative;
+        display: inline-flex;
+        align-self: center;
+        height: 420px;
+        width: 1200px;
+        transform: translate(15%, 10%);
+        border-style: solid;
+        border-color: var(--buttom-color);
+        border-radius: 7px;
+    }
+
+    .imagen_fundador img{
+        display: flex;
+        align-self: center;
+        position: absolute;
+        height: 380px;
+        transform: translate(7%, -1%);
+        border-radius: 7px;
+        box-shadow: 3px 3px 10px var(--black-color-lighten);
+    }
+
+    .fundador .titulo_fundador{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        height: 45px;
+        width: 235px;
+        font-size: 130%;
+        font-weight: bold;
+        transform: translate(275%, 70%);
+    }
+
+    .fundador div.imagen_fundador ul.lista_fundador{
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+        width: 600px;
+        font-size: 130%;
+        font-weight: bold;
+        transform: translate(85%, -180%);
+        line-height: 2.0;
+    }
+
+    .equipo{
+        position: relative; 
+        overflow: hidden;
+        height:165vh;
+    }
+
+    .equipo .titulo_equipo{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        height: 45px;
+        width: 435px;
+        font-size: 130%;
+        font-weight: bold;
+        transform: translate(125%, 70%);
+    }
+
+    .card_integrante{
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        margin: 30px 70px;
+        align-self: center;
+        height: 400px;
+        width: 325px;
+        transform: translate(17%, 25%);
+        border-style: solid;
+        border-color: var(--buttom-color);
+    }
+
+    .card_integrante a{
+        margin: 10rem auto;
+        transform: translate(0%, 265%);
+        font-size:110%;
+        font-style: bolder;
+    }
+
+    .equipo div.card_integrante ul.lista_equipo{
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+        width: 250px;
+        font-size: 75%;
+        font-weight: bold;
+        transform: translate(20%, 240%);
+        line-height: 1.5;
+    }
+
+    .card_integrante img{
+        display: flex;
+        align-self: center;
+        position: absolute;
+        height: 200px;
+        width: 220px;
+        transform: translate(24%, -75px);
+    }
+
+    .card_integrante .btn_contactanos{
+        border-style: solid;
+        border-color: black;
+        align-self: center;
+        position: absolute;
+        height: 200px;
+        width: 220px;
+        transform: translate(24%, -75px);
+        border-radius: 10px;
+    }
+
+    .contactanos{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        height: 70px;
+        width: 700px;
+        font-size: 130%;
+        font-weight: bold;
+        transform: translate(59%, 180%);
+    }
+
+    .contactanos .mensaje_contactanos{
+        display: flex;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;   
+        height: 45px;
+        width: 470px;
+        font-size: 80%;
+        font-weight: bold;
+        transform: translate(-22%, 0%);
+    }
+
+    .contactanos .btn_contactanos{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        height: 35px;
+        width: 150px;
+        font-size: 90%;
+        font-weight: bold;
+        transform: translate(160%, 0%); 
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .nuestro_equipo {
+        text-align: center;
+        padding: 20px 30px;
+        margin-top: 50px;
+    }
+
+    .nuestro_equipo h1 {
+        font-size: 2.5rem;
+    }
+
+    .nuestro_equipo a {
+        font-size: 1rem;
+        color: var(--white-color);
+    }
+
+    .nuestro_equipo img {
+        width: 100%;
+        height: auto;
+        margin: 15px 0;
+    }
+
+    .fundador {
+        padding: 20px 15px;
+    }
+
+    .fundador h2 {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 20px;
+        color: var(--white-color);
+    }
+
+    .imagen_fundador {
+        display: flex;
+        flex-direction: column;
+        border-radius: 7px;
+        padding: 15px;
+        border: 1px solid var(--buttom-color);
+    }
+
+    .imagen_fundador img {
+        width: 90%;
+        height: auto;
+        border-radius: 7px;
+        box-shadow: 3px 3px 10px var(--black-color-lighten);
+    }
+
+    .fundador .titulo_fundador {
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 5px;
+        border-radius: 5px;
+        margin-left: 42%;
+    }
+
+    .fundador div.imagen_fundador ul.lista_fundador {
+        font-size: 1rem;
+        line-height: 1.6;
+        padding: 10px;
+    }
+
+    .equipo {
+        padding: 20px 10px;
+    }
+
+    .equipo .titulo_equipo {
+        font-size: 1.2rem;
+        padding: 10px;
+        text-align: center;
+        border-radius: 7px;
+    }
+
+    .card_integrante {
+        margin: 20px 0;
+        border: 1px solid var(--buttom-color);
+        padding: 15px;
+    }
+
+    .card_integrante img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card_integrante a {
+        font-size: 1rem;
+        font-weight: bold;
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .equipo div.card_integrante ul.lista_equipo {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        padding: 10px;
+    }
+
+    .contactanos {
+        padding: 50px;
+        text-align: center;
+        border-radius: 7px;
+        margin-top: 20px;
+    }
+
+    .contactanos .mensaje_contactanos {
+        display: flex;
+        font-size: 1rem;
+        color: var(--black-color-light);
+        padding-bottom: 20px;
+    }
+
+    .contactanos .btn_contactanos {
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        transform: translate(165%, 10%);
+        width: 150px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .nuestro_equipo {
+        text-align: center;
+        margin-top: 15%;
+        padding: 20px 10px;
+    }
+
+    .nuestro_equipo h1 {
+        font-size: 1.2rem;
+    }
+
+    .nuestro_equipo a {
+        font-size: 0.7rem;
+    }
+
+    .nuestro_equipo img {
+        width: 95%;
+        margin: 10px 0;
+    }
+
+    .fundador{
+        padding: 20px 10px;
+    }
+
+    .fundador h2 {
+        font-size: 1rem;
+        text-align: center;
+        color: var(--white-color);
+    }
+
+    .imagen_fundador {
+        width: 100%;
+        transform: none;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .imagen_fundador img {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .fundador .titulo_fundador {
+        text-align: center;
+        font-size: 1rem;
+        margin-left: 100px;
+        color: var(--white-color);
+    }
+
+    .fundador div.imagen_fundador ul.lista_fundador {
+        width: 80%;
+        font-size: 0.7rem;
+        line-height: 1.5;
+        text-align: left;
+        margin-left: 35px;
+        margin-top: 10px;
+    }
+
+    .equipo {
+        height: auto;
+        padding: 10px;
+    }
+
+    .equipo .titulo_equipo {
+        font-size: 1rem;
+        margin-left: 0%;
+        height: 50px;
+        text-align: center;
+        padding: 6px;
+        border-radius: 7px;
+    }
+
+    .card_integrante {
+        width: 100%;
+        height: 150%;
+        margin: 15px 0px;
+        border-style: solid;
+        border-color: var(--buttom-color);
+    }
+
+    .card_integrante img {
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+        margin-left: 5%;
+    }
+
+    .card_integrante a {
+        font-size: 0.98rem;
+        position: relative;
+        margin-left: 15px;
+        color: var(--buttom-color);
+    }
+
+    .equipo div.card_integrante ul.lista_equipo {
+        width: 90%;
+        font-size: 0.75rem;
+        line-height: 1.5;
+        padding: 10px;
+        margin-left: 25px;
+    }
+
+    .contactanos {
+        height: 23.5vh;
+        width: 100%;
+        padding: 20px 10px;
+        text-align: center;
+        border-radius: 7px;
+    }
+
+    .contactanos .mensaje_contactanos {
+        font-size: 0.9rem;
+        width: 100%;
+        color: var(--black-color-light);
+    }
+
+    .contactanos .btn_contactanos {
+        position: absolute;
+        font-size: 0.8rem;
+        padding: 10px 10px;
+        margin-top: 10px;
+        transform: translate(43%, -45%);
+        border-radius: 5px;
+    }
+}
