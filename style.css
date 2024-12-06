@@ -12,6 +12,7 @@
   --black-color-lighten: hsl(220, 20%, 18%);
   --white-color: #fff;
   --body-color: hsl(220, 100%, 97%);
+  --buttom-color: #CEBC6F;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -44,7 +45,7 @@
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--body-color);
+  
 }
 
 ul {
