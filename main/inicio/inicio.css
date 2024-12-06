@@ -304,6 +304,7 @@ main{
     align-self: center;
     position: absolute;
     transform: translate(5%, 0%);
+    width: 215px;
 }
 
 .nuestro_equipo a.btn_equipo{
