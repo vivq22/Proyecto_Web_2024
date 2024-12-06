@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body { 
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    background: var(--black-color);
+    color: #fff;
+    margin: 0;
+}
+
+main {
+    background-color: var(--black-color);
+    color: var(--black-color);
+}
+
+.hero-panel {
+    position: relative; 
+    overflow: hidden;
+    background-color: var(--black-color);
+    height: 55vh;
+}
+
+.hero-panel img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transform: translate(0%, -20%);
+    opacity: 0.5;
+}
+
+.hero-panel a.fondo_oscuro {
+    position: absolute;
+    background-color: rgba(14, 14, 45, 0.6);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.hero-content {
+    font-size: xx-large;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2.5rem 4rem;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+    max-width: 90%;
+    width: 1400px;
+    z-index: 2;
+}
+
+.ri-auction-fill {
+    font-size: 2rem;
+    color: #FFD700;
+}
+
+.prueba {
+    padding: 2em 0; 
+    text-align: center;
+    background-color: hsl(220, 20%, 18%); 
+}
+
+.wrapper{ 
+    position: relative; 
+    width: 90%; 
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.contenedor{
+    width: 25%; 
+    max-width: 200px; 
+    height: auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5em;
+    background-color: hsl(220, 24%, 15%);
+    border-bottom: 10px solid #FFD700;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.wrapper .contenedor i {
+    color: #FFD700;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+    
+.wrapper .contenedor .num {
+    color: #fff;
+    font-weight: 600;
+    font-size: 2em;
+}
+    
+.wrapper .contenedor .text {
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 0.5em;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.intro-servicios{
+    padding: 4em 0; 
+    text-align: center;
+    background-color: hsl(220, 20%, 18%); 
+    color: #fff;
+}
+
+.carrusel{
+    background-color: hsl(220, 20%, 18%); 
+}
+
+.card-list .card-item .card-link{
+    width: 400px;
+    display: block;
+    background-color: var(--black-color);
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(217, 217, 217, 0.1);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:hover{
+    border-color: #b6b6b6;
+}
+
+.card-list .card-item{
+    list-style: none;
+}
+
+.card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .badge{
+    color: rgb(40, 40, 95);
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    margin: 16px 0 18px;
+    background: #fff;
+    font-weight: 600;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .card-title{
+    font-size: 1.19rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.card-list .card-link .card-button{
+    height: 55px;
+    width: 105px;
+    border-radius: 15%;
+    margin: 30px 0 5px;
+    border: 3px solid #FFD700;
+    color: #FFD700;
+    background: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-left: 7.5rem;
+    transition: 0.4s ease;
+
+}
+
+.card-list .card-link:hover .card-button{
+    color: black;
+    background: #FFD700;
+}
+
+.card-list {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+    padding: 20px; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.card-item {
+    flex: 1 1 calc(25% - 20px); 
+    max-width: 400px; 
+}
+
+.porque-elegirnos {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: auto;
+    background-color: hsl(0, 0%, 100%); 
+    color: #fff;
+    flex-wrap: wrap; 
+  }
+  
+
+.left-column {
+    flex: 1;
+    padding: 1rem;
+    background-color: #ffffff;
+    color: #1a1a2e;
+    border-radius: 8px;
+    margin-bottom: 1rem; 
+}
+  
+.right-column {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.block {
+    background-color: var(--black-color);
+    padding: 1rem;
+    border-radius: 8px;
+}
+  
+.block h3 {
+    margin-bottom: 0.5rem;
+    color: #ffc107;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 4px;
+    color: #1a1a2e;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+    
+@media screen and (max-width: 1024px) {
+
+    .hero-panel {
+        height: 45vh; 
+    }
+
+    .hero-content {
+        font-size: large; 
+        padding: 2rem;
+        max-width: 80%;
+    }
+
+    .hero-panel img{
+        height: 55vh;
+        width: 100%;
+    }
+
+    .ri-auction-fill {
+        font-size: 1.8rem;
+    }
+
+    .wrapper {
+        width: 85vw;
+        gap: 15px;
+    }
+
+    .contenedor {
+        width: 26vmin;
+        height: 26vmin;
+        font-size: 14px;
+    }
+
+    .card-item {
+        flex: 1 1 calc(33.33% - 20px); 
+    }
+}
+
+@media screen and (max-width: 769px) {
+
+    .hero-panel {
+        height: 40vh; 
+    }
+
+    .hero-content {
+        font-size: medium; 
+        padding: 1.5rem;
+    }
+
+    .ri-auction-fill {
+        font-size: 1.5rem;
+    }
+
+    .wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .contenedor {
+        width: calc(50% - 20px); 
+        height: auto;
+    }
+
+    .card-item {
+        flex: 1 1 calc(50% - 20px); 
+    }
+
+    .porque-elegirnos {
+        flex-direction: column; 
+      }
+    
+      .right-column {
+        grid-template-columns: 1fr; 
+      }
+}
+
+@media screen and (max-width: 425px) {
+    .hero-panel {
+        height: 35vh; 
+    }
+
+    .hero-content {
+        font-size: small;
+        padding: 1rem;
+        max-width: 90%;
+    }
+
+    .ri-auction-fill {
+        font-size: 1.2rem;
+    }
+
+    .wrapper {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .contenedor {
+        width: 100%;
+        height: auto;
+        font-size: 12px;
+    }
+
+    .contenedor .num {
+        font-size: 2em;
+    }
+
+    .contenedor .text {
+        font-size: 0.9em;
+    }
+
+    .card-item {
+        flex: 1 1 100%; 
+    }
+
+    .porque-elegirnos {
+        padding: 1rem;
+      }
+    
+    .left-column h2 {
+        font-size: 1.5rem; 
+    }
+    
+    .btn {
+        width: 100%; 
+        padding: 0.75rem;
+        font-size: 1rem;
+    }
+    
+    .right-column {
+        gap: 0.5rem; 
+    }
+    
+    .block {
+        padding: 0.75rem; 
+    }
+}
