@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+    <html  lang="en">
+    <head>        
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="/style.css"/>
+        <link rel="stylesheet" href="/main/agendar_cita/agendar_cita.css"/>
+        
+        <title>Bufete Notarial Valladares Guifarro</title>
+    </head>
+    <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <nav class="nav container">
+           <div class="nav__data">
+              <a href="#" class="nav__logo">
+                 <img class="logo" src="../../logos/LOGO VALLADARES GUIFARRO fondo azul, estilo blanco.png" alt="Logo Bufete Notarial Valladares Guifarro">
+                  VALLADARES GUIFARRO
+              </a>
+              
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line nav__burger"></i>
+                 <i class="ri-close-line nav__close"></i>
+              </div>
+           </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li><a href="../../index.html" class="nav__link">Inicio</a></li>
+
+                  <!--=============== DROPDOWN 1 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Servicios <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="/main/servicios/servicios.html" class="dropdown__link">
+                              <i class="ri-service-line"></i> Nuestros Servicios
+                           </a>                          
+                        </li>
+                        <li>
+                           <a href="/main/recursos_legales/requisitos.html" class="dropdown__link">
+                              <i class="ri-task-line"></i> Requisitos
+                           </a>                          
+                        </li>
+                     </ul>
+                  </li>
+
+                  <!--=============== DROPDOWN 2 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Nosotros <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="/main/sobre_nosotros/nosotros.html" class="dropdown__link">
+                              <i class="ri-information-line"></i> ¿Quienes Somos?
+                           </a>
+                        <li>
+                           <a href="/main/testimonios/testimonios.html" class="dropdown__link">
+                              <i class="ri-bard-line"></i> Casos Ad Honorem
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="/main/equipo/equipo.html" class="dropdown__link">
+                              <i class="ri-group-line"></i> Equipo
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  
+                  <!--=============== DROPDOWN 3 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Recursos <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="/main/recursos_legales/requisitos.html" class="dropdown__link">
+                              <i class="ri-file-line"></i> Recursos Legales
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="/main/blog/blog.html" class="dropdown__link">
+                              <i class="ri-news-line"></i> Blog de Noticias
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="/main/preguntas_frecuentes/faq.html" class="dropdown__link">
+                              <i class="ri-question-answer-line"></i> Preguntas Frecuentes
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  
+                  <li><a href="/main/contactenos/contactenos.html" class="nav__link">Contacto</a></li>
+
+                  <li><a href="/main/agendar_cita/agendar_cita.html" class="nav__link">Agenda Cita</a></li>
+               </ul>
+            </div>
+         </nav>
+      </header>         
+    <main>
+        <section class="cita">
+            <picture>
+                <img src="/img/IMAGEN_FONDO_AGENDAR.jpg" alt="Fondo">                    
+            </picture>
+            <a class="fondo_oscuro"></a>
+            <div class="cita_titulo">
+                <h1>¡Agenda tu cita!</h1>
+                <a class="frase">Estamos aqui para ayudarte con tus tramites legales y notariales. 
+                    Reserva tu cita en unos minutos y recibe una atención personalizada.
+                </a>
+            </div>
+        </section>
+
+        <section class="agendar_cita">
+            <a class="frase_cita">Por favor, complete el siguiente formulario para registrar su cita.
+                Asegurese de proporcionar toda la información clara y precisa para facilitar el proceso.
+            </a>
+            <div class="formulario">
+                <h2>Formulario</h2>
+                <form action="agendar_cita.html" method="GET">
+                    <label for="txt_Nombre">Nombre completo</label>
+                    <input id="txt_Nombre" name="txt_Nombre" type="text" placeholder="Nombre Completo" />
+
+                    <label for="txt_Email">Correo electronico</label>
+                    <input id="txt_Email" name="txt_Email" type="email" placeholder="correo@gmail.com" />            
+
+                    <label for="txt_Number">Número telefónico</label>
+                    <input id="txt_Numero" name="txt_Numero" type="number" placeholder="#### ####" />            
+                    
+                    <label for="cmb_servicios">Servicios</label>
+                    <select name="cmb_servicio" id="cmbservicio">
+                        <option value="OPC1" selected>Autenticación de documentos</option>
+                        <option value="OPC2">Redacción y otorgamiento de escrituras públicas</option>
+                        <option value="OPC3">Elaboración de testamentos</option>
+                        <option value="OPC4">Donaciones</option>
+                        <option value="OPC5">Actas notariales</option>
+                        <option value="OPC6">Constitución de hipotecas</option>
+                    </select>
+
+                    <label for="txt_Long_Text">Mensaje opcional</label>
+                    <textarea name="txtmensaje" id="txtLongText" placeholder="Escribe aquí cualquier información personal que debamos saber antes de la cita..."
+                    ></textarea>
+                    <button type="submit" name="btnEnviar">Enviar</button>            
+                </form>
+            </div>
+
+            <div class="servicio_contacto">
+                <a class="mensaje">¿Tienes alguna duda antes de agendar? 
+                    ¡Contactanos y con gusto te orientaremos!
+                </a>
+                <a href="/main/contactenos/contactenos.html" class="btn_mensaje">Contáctanos</a>
+            </div>
+
+            <div class="servicio_contacto">
+                <a class="mensaje">Tienes dudas sobre los servicios, 
+                    da clic en el botón para consultarlos
+                </a>
+                <a href="/main/servicios/servicios.html" class="btn_mensaje">Servicios</a>
+            </div>
+        </section>
+
+        <section>
+            <!--Botón Inicio-->
+            <a href="#" class="btn-top" id="scroll-top">
+                <i class="ri-arrow-up-s-line"></i>
+            </a>      
+        </section>
+    </main>
+        <!--=============== FOOTER ===============-->
+        <footer>
+            <small>&copy;2024 <b>Programacion Web UNICAH</b> -Todos los derechos Reservados.</small>
+            <section class="Contacto">
+               <p>Boulevar Morazán, Torre Morazán No.1 N2 Area Comercial</p>
+               <p>Distrito Central, Francisco Morazán, Honduras</p>
+               <p>Telefono: +504 9928-6475</p>
+               <p>Email: josevalladares13@gmail.com </p>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a href="/main/servicios/servicios.html">Servicios</a></li>
+                    <li><a href="/main/agendar_cita/agendar_cita.html">Agenda Cita</a></li>
+                    <li><a href="/main/recursos_legales/requisitos.html">Requisitos</a></li>
+                </ul>
+            </nav>
+        </footer>
+        <!--=============== MAIN JS ===============-->
+        <script src="/main.js"></script>
+        <script src="/main/agendar_cita/agendar_cita.js"></script>
+    </body>
+</html>
