@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+/*Para Celulares*/
+@media screen and (min-width: 320px){}
+.hero {
+  padding: 20px 10px; 
+  margin-top: 2rem; 
+}
+
+main {
+  background-color: var(--black-color-lighten);
+}
+
+.hero img{
+  width: 100%;
+  height: 50%;
+}
+
+
+.contenido_titulo {
+  width: 100%; 
+  text-align: center; 
+  color: #ddd;
+}
+
+.contenido_titulo h1 {
+  font-size: 24px; 
+  margin-bottom: 15px;
+}
+
+.contenido_titulo p {
+  font-size: 14px; 
+  line-height: 20px; 
+}
+
+.tarjetas_articulo, .tarjetas_noticias {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+ flex-direction: column;
+  margin-top: 2rem;
+  gap: 1.5rem;  
+  padding: 2rem;
+ 
+}
+.tarjetas_articulo h3, .tarjetas_noticias h3 {
+  color:var(--buttom-color);
+}
+
+.card {
+  background: var(--white-color);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 1.5rem); 
+  max-width: 300px; 
+  margin-top:2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; 
+  border-color: #333; /*FALTA*/
+}
+
+/*Gmail*/
+.Gmail {
+  
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.Gmail .rectangulo {
+  background-color: #f2f2f2; 
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px; 
+  gap: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.Gmail img {
+  width: 40px;
+  height: 40px;
+}
+
+.Gmail p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  margin: 0;
+}
+
+.Gmail input[type="email"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+.Gmail button {
+  background-color: var(--buttom-color); 
+  color: var(--white-color);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  justify-items: left;
+  
+}
+
+@media screen and (min-width: 768px)  {
+  .hero img {
+    height: 59vh;
+  }
+  
+  .hero a.fondo_oscuro {
+    position: absolute;
+    padding: 0.5rem 1.5rem;
+    background-color: rgba(14, 14, 45, 0.6);
+    color: var(--black-color);
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -51%);
+    padding: 2.5rem 4rem;
+    height: 59vh;
+    width: 749px;
+  }
+
+  .tarjetas_articulo, .tarjetas_noticias {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-direction: row; 
+    
+  }
+}
+
+@media screen and (min-width: 1024px) 
+{
+
+  body{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    background: var(--black-color);
+    color: var(--white-color);
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+main{
+    background-color: var(--black-color-lighten);
+    color: var(--black-color);
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    height: 52vh;
+    text-align:left;
+    
+}
+
+.hero img {
+    width: auto;
+    height: 70vh;
+    object-fit: cover;
+    object-position:center ; 
+    opacity: 0.5;
+}
+
+
+.hero div {
+    position: absolute;
+    top: 54%;
+    left: 94%;
+    transform: translate(-105%, -50%);
+    text-align: center;
+    width: 550px;
+    color:var(--white-color);
+    font-size: 23px;
+}
+
+.hero a.fondo_oscuro{
+    position: absolute;
+    align-self: center center;  
+    padding: 0.5rem 1.5rem;
+    background-color: rgba(14, 14, 45, 0.6);
+    color: var(--black-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2.5rem 4rem;
+    height: 100vh;
+    width: 300vh;
+    }
+
+/*Tarjetas*/
+
+.tarjetas_articulo, .tarjetas_noticias {
+margin-top: 2rem;
+display: flex;
+gap: 1.5rem; 
+justify-content: center; 
+padding: 1rem;
+}
+
+.card {
+background: var(--white-color);
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+flex: 1 1 calc(33.333% - 1.5rem); 
+max-width: 300px; 
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+width: 100%;
+height: 200px;
+object-fit: cover; 
+border-color: #333; /*FALTA*/
+}
+
+.contenido {
+padding: 1rem;
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+}
+
+.contenido h2 {
+font-size: 1.2rem;
+margin: 0;
+color: #333;
+}
+.tarjetas_articulo h3, .tarjetas_noticias h3 {
+font-size: 2rem;
+margin: 0;
+color: var(--buttom-color);
+}
+
+.contenido p {
+font-size: 0.9rem;
+color: #555;
+line-height: 1.4;
+}
+
+.contenido a {
+font-size: 0.9rem;
+color: #0066cc;
+text-decoration: none;
+align-self: flex-start;
+margin-top: auto;
+transition: color 0.3s ease;
+}
+
+.contenido a:hover {
+color: #004499;
+}
+
+/*CUADRO GMAIL*/
+
+.Gmail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.Gmail .rectangulo {
+  background-color: var(--white-color); 
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  width: 90%; 
+  max-width: 800px; 
+  gap: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.Gmail img {
+  width: 40px;
+  height: 40px;
+}
+
+.Gmail p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  margin: 0;
+}
+
+.Gmail input[type="email"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+.Gmail button {
+  background-color: var(--buttom-color); 
+  color: var(--white-color);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  
+}
+
+}
